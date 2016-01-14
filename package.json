@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Server for JS files written for Google Closure Compiler",
   "keywords": ["build", "closure", "compile", "module"],
-  "main": "server",
+  "main": "main",
   "repository": {
     "type": "git",
     "url": "git://github.com/redscorpix/node-closuredevserver.git"
