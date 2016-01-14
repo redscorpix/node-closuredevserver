@@ -1,0 +1,31 @@
+{
+  "name": "closuredevserver",
+  "version": "0.0.1",
+  "description": "Server for JS files written for Google Closure Compiler",
+  "keywords": ["build", "closure", "compile", "module"],
+  "main": "server",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/redscorpix/node-closuredevserver.git"
+  },
+  "author": {
+    "name": "Vladislav Yakovlev",
+    "email": "red.scorpix@gmail.com"
+  },
+  "preferGlobal": false,
+  "private": false,
+  "license": "MIT",
+  "dependencies": {
+    "async": "1.4.x",
+    "body-parser": "1.13.x",
+    "closurebuilder": "git+ssh://git@github.com:redscorpix/node-closurebuilder.git",
+    "errorhandler": "1.4.x",
+    "express": "4.x",
+    "mkdirp": "0.5.x",
+    "morgan": "1.6.x",
+    "ncp": "2.0.x",
+    "node-uuid": "1.4.x",
+    "optimist": "0.6.x",
+    "run-sequence": "1.1.x"
+  }
+}
