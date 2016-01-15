@@ -156,7 +156,8 @@ Application.prototype._compile = function() {
       closurebuilder.ModuleBuilder.compile(self._compilerPath, modules,
         self._config.files, params, onComplete);
     } else {
-      params.compilerFlags.push('--output_wrapper "CLOSURE_NO_DEPS=true;\n%output%"');
+      params.compilerFlags.push(
+        '--output_wrapper "CLOSURE_NO_DEPS=true;\n%output%\n//# sourceMappingURL=/' + self.id + '/index.map"');
       params.sourceMapPath = dirname + '/index.map';
       params.outputFile = dirname + '/index.js';
       closurebuilder.Builder.compile(self._compilerPath,
